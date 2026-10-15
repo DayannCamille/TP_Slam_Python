@@ -1,0 +1,171 @@
+#PARTIE 1
+
+#CODE PIN
+
+"""code_pin = 4567
+code_p = int(input("Saisissez votre code PIN : "))
+if code_p != code_pin :
+    print("Code incorrect")
+else :
+    print("Code correct")"""
+
+# SIGNE D'UN NOMBRE
+
+"""nombre = int(input("Saisissez un nombre : "))
+if nombre > 0 :
+    print("Positif")
+elif nombre < 0 :
+    print("Negatif")
+else :
+    print("Nul")"""
+
+# PARITE
+
+"""n_entier = int(input("Saisissez un nombre : "))
+if n_entier % 2 == 0 :
+    print(n_entier, "est un nombre pair")
+else :
+    print(n_entier, "est un nombre impair")"""
+
+#AGE
+
+"""age=int(input("Saisissez votre âge : "))
+if age < 12 :
+    print("A" ,age, "ans, vous êtes un enfant")
+elif 12 < age < 18 :
+    print("A" ,age, "ans, vous êtes un adolescent")
+else :
+    print("A" ,age, "ans, vous êtes un adulte")"""
+
+
+#PERTE OU PROFIT
+
+"""prix_fab = float(input("Saisissez le prix de fabrication : "))
+prix_vente = float(input("Saisissez le prix de vente : "))
+if prix_fab > prix_vente :
+    print("Perte")
+else :
+    print("Profit")"""
+
+
+#MAXIMUM
+
+"""nb1 = float(input("Saisissez le premier nombre : "))
+nb2 = float(input("Saisissez le deuxième nombre : "))
+nb3 = float(input("Saisissez le troisième nombre : "))
+
+if nb1 > nb2 and nb1 > nb3 :
+    print("Le maximum est le premier nombre", nb1)
+elif nb2 > nb1 and nb2 > nb3 :
+    print("Le maximum est le second nombre", nb2)
+else :
+    print("Le maximum est le troisième nombre", nb3)"""
+
+
+#TRIANGLE RECTANGLE
+
+"""cote1 = float(input("Saisissez la longueur 1 : "))
+cote2 = float(input("Saisissez la longueur 2 : "))
+cote3 = float(input("Saisissez la longueur 3 : "))
+
+    if cote3**2 == cote1**2 + cote2**2 :
+        print("Ce triangle est rectangle")
+    else :
+        print("Ce triangle n'est pas rectangle")"""
+
+#POUR ALLER PLUS LOIN
+
+"""cote1 = float(input("Saisissez la longueur 1 : "))
+cote2 = float(input("Saisissez la longueur 2 : "))
+cote3 = float(input("Saisissez la longueur 3 : "))
+if cote1 < cote2 < cote3 :
+    if cote3**2 == cote1**2 + cote2**2 :
+        print("Ce triangle est rectangle")
+    else :
+        print("Ce triangle n'est pas rectangle")
+else :
+    print("Les longueurs n'ont pas été saisies dans l'ordre croissant")"""
+
+
+#PARTIE 2
+
+#ANNEE BISSEXTILE
+
+"""annee = int(input("Saisissez une année : "))
+
+if (annee % 4 == 0) and (annee % 100 != 0) or (annee % 400 == 0):
+    print("L'année", annee, "est bissextile")
+else :
+    print("L'année", annee, "n'est pas bissextile")"""
+
+#SOCIETE DE TRANSPORT
+
+"""age = int(input("Saisir votre âge : "))
+prix = 10
+
+if age < 5 :
+    prix_r = prix - 10
+    print("Le tarif est de ", prix_r, "€")
+elif age < 16 :
+    prix_r = prix * 50/100
+    print("Le tarif est de ", prix_r, "€")
+elif age < 21 :
+    prix_r = prix * 60/100
+    print("Le tarif est de ", prix_r, "€")
+else :
+    prix_r = prix * 90/100
+    print("Le tarif est de ", prix_r, "€")"""
+
+
+#VOYAGE SCOLAIRE
+
+"""nb_eleves = int(input("Saisir le nombre d'élèves : "))
+nb_jours = int(input("Saisir la durée du voyage : "))
+
+nourriture = 3.50 * nb_jours #Calcul le prix total de nourriture par élève
+
+if nb_eleves < 25 : #S'il y'a 25 élèves ou moins
+    cout_transport = 110 #Le coût du transport est de 110 €
+else :
+    cout_transport = 100 #Le coût du transport est de 100 €
+
+if nb_eleves < 20 : #S'il y'a 20 élèves ou moins
+    heberg = 4.20 * nb_jours #L'hébergement coûte 4.20€ par jour
+elif 20 < nb_eleves < 35 : #Si le nombre d'élèves est entre 20 et 35
+    heberg = 3.80 * nb_jours #L'hébergement coûte 3.80€ par jour
+else :
+    heberg = 4.00 * nb_jours #L'hébergement coûte 4.00€ par jour
+
+total = cout_transport + nourriture + heberg #Variable qui calcule le tout
+
+print("Le prix du voyage revient à", total, "euros par élève.")"""
+
+
+#VINCI LOCATION
+
+type_v = int(input("Type du véchicule : Citadine -> 1 , Berline -> 2 , Sportive -> 3 : "))
+type_c = int(input("Type de carburant : Essence -> 1 , Diesel -> 2 : "))
+duree_l = int(input("Durée de location en jour : "))
+duree_k = int(input("Distance en km : "))
+off_com = int(input("Offre commerciale ; 0 , 1 : "))
+
+if type_v == 1 :
+    prix_v = 80 * duree_l
+elif type v == 2 :
+    prix_v = 100 * duree_l
+else :
+    prix_v = 130 * duree_l
+
+if type_c == 1 :
+    prix_c = 80 * duree_k
+elif type c == 2 :
+    prix_c = 100 * duree_k
+else :
+    prix_c = 130 * duree_k
+
+if off_com == 1 :
+    calcul_off = ((prix_v + prix_c)* 10/100) + 30
+    print("Le prix total de la location est de", calcul_off, "euros.")
+else :
+    calcul_off = ((prix_v + prix_c)* 10/100) + 30
+    print("Le prix total de la location est de", calcul_off, "euros.")
